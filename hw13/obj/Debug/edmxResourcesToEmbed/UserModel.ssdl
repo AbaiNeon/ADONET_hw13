@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="UserModelStoreContainer">
+    <EntitySet Name="UserSet" EntityType="UserModel.Store.UserSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OSSet" EntityType="UserModel.Store.OSSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="OSUser" Association="UserModel.Store.OSUser">
+      <End Role="OS" EntitySet="OSSet" />
+      <End Role="User" EntitySet="UserSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OSId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OSSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameOS" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="OSUser">
+    <End Role="OS" Type="UserModel.Store.OSSet" Multiplicity="1" />
+    <End Role="User" Type="UserModel.Store.UserSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OS">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="OSId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

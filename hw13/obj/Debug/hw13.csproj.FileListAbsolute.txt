@@ -1,0 +1,12 @@
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\hw13.exe.config
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\hw13.exe
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\hw13.pdb
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\EntityFramework.dll
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\EntityFramework.xml
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\obj\Debug\hw13.csprojResolveAssemblyReference.cache
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\obj\Debug\hw13.csproj.CoreCompileInputs.cache
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\obj\Debug\hw13.exe
+C:\Users\ТогузбаевА\Desktop\hw13\hw13\obj\Debug\hw13.pdb
